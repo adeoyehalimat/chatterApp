@@ -1,0 +1,32 @@
+@media screen and (min-width :481px) and (max-width :767px)  { 
+  #app {
+    width: fit-content;
+    /* height: max-content; */
+    /* Additional styles for smaller screens */
+  
+  
+    }}
+    @media screen and  (max-width :1024px)  { 
+      #app {
+        width: max-content;
+        height: max-content;
+        /* Additional styles for smaller screens */
+      
+      
+        }}
+        @media screen and  (min-width :1201px)  { 
+          #app {
+            width: max-content;
+            height: max-content;
+            /* Additional styles for smaller screens */
+          
+          
+            }}
+            @media screen and  (max-width :1200px)  { 
+              #app {
+                width: max-content;
+                height: max-content;
+                /* Additional styles for smaller screens */
+              
+              
+                }}
