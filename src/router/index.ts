@@ -19,13 +19,19 @@ const router = createRouter({
       redirect: '/home-page',
       component: DashBoard,
       children: [
-        { path: '/home-page', name: 'home-page', component: HomePage },
-        { path: '/about-page', component: AboutPage },
-        { path: '/contact-page', component: ContactPage },
+        {
+          path: '/home-page',
+          name: 'home-page',
+          component: HomePage,
+          meta: { requiresAuth: true }
+        },
+        { path: '/about-page', component: AboutPage, meta: { requiresAuth: true } },
+        { path: '/contact-page', component: ContactPage, meta: { requiresAuth: true } },
         {
           path: '/blogs-page',
           name: 'Blogspage',
-          component: () => import('../components/feed-screen.vue')
+          component: () => import('../components/feed-screen.vue'),
+          meta: { requiresAuth: true }
         }
       ]
     },
@@ -39,18 +45,24 @@ const router = createRouter({
   ]
 })
 
-const isLoggedIn = !!localStorage.getItem('isLoggedIn')
 
-router.beforeEach(async (to, from) => {
-  if (
-    // make sure the user is authenticated
-    !isLoggedIn &&
-    // ❗️ Avoid an infinite redirect
-    to.name !== 'Log-in'
-  ) {
-    // redirect the user to the login page
-    return { name: 'Log-in' }
+router.beforeEach(async (to, from, next) => {
+  const isLoggedIn = !!localStorage.getItem("isLoggedIn");
+  console.log(isLoggedIn);
+  console.log(to);
+  
+
+  if (to.matched.some((item) => item.meta.requiresAuth)) {
+    if (!isLoggedIn) {
+      next({ path: "/log-in" });
+    } else {
+      next();
+    }
+  } else if (isLoggedIn && to.name === "Log-in") {
+    next({ path: "/" });
+  } else {
+    next();
   }
-})
+});
 
 export default router

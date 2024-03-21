@@ -646,12 +646,12 @@
                 color: 'rgba(208,208,208,1)'
               }"
             />
-            <input
+            <textarea
               type="text"
               placeholder="Write a post............."
               :style="{
-                width: '276px',
-                height: '48px',
+                width: 'max-content',
+                height: 'max-content',
                 textAlign: 'center',
                 fontFamily: '\'DM Sans\', sans-serif',
                 fontSize: '32px',
@@ -660,7 +660,7 @@
                 letterSpacing: '0em',
                 color: 'rgba(208,208,208,1)'
               }"
-            />
+            ></textarea>
           </div>
         </div>
         <div class="publish">

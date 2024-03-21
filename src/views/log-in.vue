@@ -127,6 +127,9 @@
         height: '288px',
         top: '310px',
         left: '805px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '40px',
         position: 'absolute'
       }"
     >
@@ -149,14 +152,13 @@
             lineHeight: '24px',
             letterSpacing: '0em',
             textAlign: 'left',
-            color: 'rgba(59, 59, 59, 1)'
+            color: 'rgba(59, 59, 59, 1)',
           }"
         >
-          Email address</label
-        >
+          Email address
         <input
           type="email"
-          v-model="user.email"
+          v-model="v$.email.$model"
           placeholder="Johndoe@gmail.com "
           :style="{
             width: '520px',
@@ -167,6 +169,15 @@
             boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
           }"
         />
+        <div
+        v-if="v$.email.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.email.$errors[0].$message
+          }}</div>
+        </label
+        >
       </div>
       <div
         :style="{
@@ -174,12 +185,13 @@
           height: '92px',
           gap: '12px',
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          
         }"
       >
         <label
           :style="{
-            width: '71px',
+            width: '103px',
             height: '24px',
             fontFamily: '\'DM Sans\', sans-serif',
             fontSize: '16px',
@@ -191,10 +203,10 @@
           }"
         >
           Password
-        </label>
+        
         <input
           type=""
-          v-model="user.password"
+          v-model="v$.password.$model"
           placeholder="********** "
           :style="{
             width: '520px',
@@ -205,6 +217,12 @@
             boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
           }"
         />
+        <div :style ="{color: 'red', fontWeight: '500px',width: 'max-content', height: 'auto'}" 
+        v-if="v$.password.$errors.length"
+        >{{
+            v$.password.$errors[0].$message
+          }}</div>
+      </label>
       </div>
     </form>
 
@@ -236,16 +254,31 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '@/utils/firebase';
+import { toast } from 'vue3-toastify'
+import { useVuelidate } from '@vuelidate/core';
+import { required, email, minLength} from '@vuelidate/validators'
 
 const router = useRouter()
+
 const user = ref({
   email: '',
   password: ''
-})
+});
+const userRules = {
+  email: { required, email },
+  password: { required, minLength: minLength(6) },
+};
+const v$ = useVuelidate(userRules, user);
+
+
+
 const handleLogin = async () => {
+  const isValid = await v$.value.$validate();
+  if (!isValid) return;
+
   try {
-    const auth = getAuth()
     const response = await signInWithEmailAndPassword(auth, user.value.email, user.value.password)
     console.log(response)
     if (response.user) {
@@ -253,6 +286,7 @@ const handleLogin = async () => {
       router.push('/home-page')
     }
   } catch (error) {
+    toast.error(error.message);
     console.log(error)
   }
 }
@@ -274,7 +308,7 @@ const handleLogin = async () => {
   padding: 8px, 16px, 8px, 16px;
   border-radius: 8px;
   gap: 8px;
-  top: 520px;
+  top: 580px;
   left: 805px;
   background-color: rgba(84, 62, 224, 1);
   position: absolute;

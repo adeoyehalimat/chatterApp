@@ -507,15 +507,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref  } from 'vue'
 import { useRouter } from 'vue-router'
 import { auth } from '@/utils/firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
+// import { useUserStore } from "@/stores/user";
 
-const router = useRouter()
-const handleCreateAccount = () => {
-  router.push('/confirm-message')
-}
+const router = useRouter();
+
 const user = ref({
   firstName: '',
   lastName: '',
@@ -527,7 +526,9 @@ const user = ref({
 
 
 const confirmPassword = ref('')
-
+const handleCreateAccount = () => {
+  router.push('/confirm-message')
+}
 const handleSignup = async () => {
   try {
     const response = await createUserWithEmailAndPassword(
@@ -536,10 +537,11 @@ const handleSignup = async () => {
       user.value.password
     )
     console.log(response)
-    router.push('/confirm-message')
+    router.push('/log-in')
   } catch (error) {
     console.log(error)
   }
+  
   console.log(user.value.firstName);
 }
 </script>

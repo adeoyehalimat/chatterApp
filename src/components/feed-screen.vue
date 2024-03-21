@@ -847,7 +847,7 @@
                           color: 'rgba(17,17,17,1)'
                         }"
                       >
-                        Grace Ikpang
+                     Grace Ikpang
                       </div>
                       <div
                         class="date-occupation"
@@ -2204,8 +2204,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { signOut, getAuth } from 'firebase/auth'
-import { ref } from 'vue'
-const router = useRouter()
+import { ref } from 'vue';
+// import { useUserStore } from '@/stores/user';
+
+
+const router = useRouter();
+
+
+
 
 const handlePostContent = () => {
   router.push('/post-screen1')
