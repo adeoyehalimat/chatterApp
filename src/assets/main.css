@@ -1,8 +1,7 @@
-@media screen and (min-width :481px) and (max-width :767px)  { 
+/* @media screen and (min-width :481px) and (max-width :767px)  { 
   #app {
     width: fit-content;
-    /* height: max-content; */
-    /* Additional styles for smaller screens */
+    
   
   
     }}
@@ -10,15 +9,14 @@
       #app {
         width: max-content;
         height: max-content;
-        /* Additional styles for smaller screens */
-      
+        
       
         }}
         @media screen and  (min-width :1201px)  { 
           #app {
             width: max-content;
             height: max-content;
-            /* Additional styles for smaller screens */
+            
           
           
             }}
@@ -26,7 +24,26 @@
               #app {
                 width: max-content;
                 height: max-content;
-                /* Additional styles for smaller screens */
+               
               
               
-                }}
+                }} */
+                @media screen and (min-width: 481px) {
+                  * {
+                    width: max-content;
+                    height: max-content;
+                  }
+                }
+                @media screen and (min-width: 769px) {
+                  * {
+                    width: max-content;
+                    height: max-content;
+                  }
+                }
+                @media screen and (min-width: 1025px) {
+                  * {
+                    width: max-content;
+                    height: max-content;
+                  }
+                }
+                

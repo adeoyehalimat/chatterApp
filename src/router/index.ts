@@ -36,7 +36,7 @@ const router = createRouter({
       ]
     },
     { path: '/log-in', name: 'Log-in', component: LogIn },
-    { path: '/registration-page', component: RegistrationPage },
+    { path: '/registration-page', component: RegistrationPage, meta: { requiresAuth: false } },
     { path: '/confirm-message', component: ConfirmMessage },
 
     { path: '/post-screen1', component: Postscreen1 },

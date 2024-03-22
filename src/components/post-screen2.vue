@@ -728,7 +728,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const handlePublish = () => {
-  router.push('/post-screen3')
+  router.push('/feed-screen')
 }
 </script>
 

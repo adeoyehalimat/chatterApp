@@ -149,7 +149,7 @@
             </label>
             <input
               type="text"
-              v-model="user.firstName"
+              v-model="v$.firstName.$model"
               placeholder="John "
               :style="{
                 width: '252px',
@@ -160,6 +160,13 @@
                 boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
               }"
             />
+            <div
+        v-if="v$.firstName.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.firstName.$errors[0].$message
+          }}</div>
           </div>
           <div :style="{ width: '252px', height: '92px', gap: '12px' }">
             <label
@@ -180,7 +187,7 @@
             </label>
             <input
               type="text"
-              v-model="user.lastName"
+              v-model="v$.lastName.$model"
               placeholder="Doe "
               :style="{
                 width: '252px',
@@ -191,6 +198,13 @@
                 boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
               }"
             />
+            <div
+        v-if="v$.lastName.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.lastName.$errors[0].$message
+          }}</div>
           </div>
         </div>
 
@@ -299,7 +313,7 @@
 
           <input
             type="email"
-            v-model="user.email"
+            v-model="v$.email.$model"
             placeholder="Johndoe@gmail.com "
             :style="{
               width: '520px',
@@ -310,6 +324,13 @@
               boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
             }"
           />
+          <div
+        v-if="v$.email.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.email.$errors[0].$message
+          }}</div>
         </div>
 
         <div
@@ -339,7 +360,7 @@
 
           <input
             type=""
-            v-model="user.password"
+            v-model="v$.password.$model"
             placeholder="********** "
             :style="{
               width: '520px',
@@ -350,6 +371,13 @@
               boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
             }"
           />
+          <div
+        v-if="v$.password.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.password.$errors[0].$message
+          }}</div>
         </div>
         <div
           :style="{
@@ -378,7 +406,7 @@
 
           <input
             type=""
-            v-model="confirmPassword"
+            v-model="v$.confirmPassword.$model"
             placeholder="********** "
             :style="{
               width: '520px',
@@ -389,6 +417,13 @@
               boxShadow: '0px 0px 1px 0px rgba(33, 37, 41, 0.08)'
             }"
           />
+          <div
+        v-if="v$.confirmPassword.$errors.length"
+        :style ="{color: 'red', fontWeight: '500px', width: '520px',
+            }"
+        >{{
+            v$.fconfirmPassword.$errors[0].$message
+          }}</div>
         </div>
 
         <div class="button-container">
@@ -417,7 +452,7 @@
         <button
           :style="{
             width: '520px',
-            top: '650px',
+            top: '700px',
             position: 'absolute',
             height: '51px',
             gap: '11px',
@@ -461,7 +496,7 @@
         <button
           :style="{
             width: '520px',
-            top: '710px',
+            top: '760px',
             position: 'absolute',
             height: '51px',
             gap: '11px',
@@ -507,10 +542,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref  } from 'vue'
+import { ref, computed  } from 'vue'
 import { useRouter } from 'vue-router'
 import { auth } from '@/utils/firebase'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { toast } from 'vue3-toastify';
+import { useVuelidate } from '@vuelidate/core';
+import {required, email, minLength, sameAs } from '@vuelidate/validators';
 // import { useUserStore } from "@/stores/user";
 
 const router = useRouter();
@@ -520,29 +558,45 @@ const user = ref({
   lastName: '',
   email: '',
   password: '',
+  confirmPassword: '',
+});
 
-  
-})
+const userRules = {
+  firstName: { required },
+  lastName: { required },
+  email: { required, email },
+  password: { required, minLength: minLength(6) },
+  confirmPassword: {
+    required,
+    minLength: minLength(6),
+    sameAs: sameAs(computed(() => user.value.password)),
+  },
+};
 
+const v$ = useVuelidate(userRules, user);
 
-const confirmPassword = ref('')
 const handleCreateAccount = () => {
   router.push('/confirm-message')
 }
 const handleSignup = async () => {
+  const isValid = await v$.value.$validate();
+  if (!isValid) return;
   try {
     const response = await createUserWithEmailAndPassword(
       auth,
       user.value.email,
       user.value.password
     )
+    
     console.log(response)
-    router.push('/log-in')
-  } catch (error) {
+    router.push('/');
+  } catch (error:any) {
+    toast.error(error.message)
     console.log(error)
   }
   
   console.log(user.value.firstName);
+  console.log('button clicked')
 }
 </script>
 
@@ -615,7 +669,7 @@ const handleSignup = async () => {
   padding: 8px, 16px, 8px, 16px;
   border-radius: 8px;
   gap: 8px;
-  top: 580px;
+  top: 630px;
   background-color: rgba(84, 62, 224, 1);
   position: absolute;
 }

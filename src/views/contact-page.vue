@@ -1,3 +1,3 @@
 <template>
-    <h1>this is the contact pgae</h1>
+    <h1 :style="{ textAlign: 'center', top: '100px', position: 'fixed'}" > contact page</h1>
 </template>
