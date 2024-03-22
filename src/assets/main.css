@@ -1,33 +1,4 @@
-/* @media screen and (min-width :481px) and (max-width :767px)  { 
-  #app {
-    width: fit-content;
-    
-  
-  
-    }}
-    @media screen and  (max-width :1024px)  { 
-      #app {
-        width: max-content;
-        height: max-content;
-        
-      
-        }}
-        @media screen and  (min-width :1201px)  { 
-          #app {
-            width: max-content;
-            height: max-content;
-            
-          
-          
-            }}
-            @media screen and  (max-width :1200px)  { 
-              #app {
-                width: max-content;
-                height: max-content;
-               
-              
-              
-                }} */
+
                 @media screen and (min-width: 481px) {
                   * {
                     width: max-content;
