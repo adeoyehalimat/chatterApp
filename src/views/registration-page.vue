@@ -589,7 +589,7 @@ const handleSignup = async () => {
     )
     
     console.log(response)
-    router.push('/');
+    router.push('/log-in');
   } catch (error:any) {
     toast.error(error.message)
     console.log(error)

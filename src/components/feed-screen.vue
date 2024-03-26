@@ -493,7 +493,7 @@
           </div>
           <div :style="{ width: '48px', height: '48px' }">
             <img
-              src="https://s3-alpha-sig.figma.com/img/80a2/f0d9/4cd112f12b18cc351a0d65cc6d9d59bf?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OIYql2e8wYdwDCdygciPIx3OmKXR95yvCIBtGHb0bdQxILe5k14ATkGeh~9OnTGWNsfZ8LeeHK3Gijv6Ks5YHhKVVbVoomrPgTv1dg6CDO~z9elwx20lTBsYDutT6twhRLmhfSGPcc6oFM68y3S5uLEGu1sqSWCWFc4ObC5S5tRgAXQBnEI9USIcTrRzVTygnKIfKgiXXjyqWnoyCP~bOr83UBAKU1ChRAH2HmHPjhyy~NnaIaglvQjG5eAmUp1bcb2hLkLp9vxfVjJWhO5YIBH5JzmY78KrHUNl1tWeaCEQg9gTjSo1nYHi9u~nSwgvkWiuWW~01HMoULGlckLtXA__"
+              src="../assets/images/adebola-muyideen.jpeg"
               alt=""
               :style="{
                 width: '52.68px',
@@ -820,7 +820,7 @@
                     }"
                   >
                     <img
-                      src="https://s3-alpha-sig.figma.com/img/f603/cba7/2f8cbc49af324b24e1f943af6ab3aac4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FmeGUj~DorYbOw5jO4riZC8MxIK~Lt3TJrXvZyV8tG5nUNjcotBrr4Qdf4jHfdxWFE2ZPHzArOQ~DuuinI~FxF2dfkixh1K7cW1CeVjmt6ckDRD-rI16ExK19MCdSNMPuHwoYGngpSpuPXXln603uKMTU0ezaeKwYaN4aOjltP-s1DVXQ2LxekXDGosAMiGfpyLdluiqpidDb4YwbdOanlzIsW5LwR6JY4VWUM1fucX-RMuBZr95wWY8Vw10fMqQZdOXDmc0zwvvm-i3jHx~ZbiYzSQzJINPi3ITRnQ1MPpifCercjwBgZ8hMMhTct8wP9swpzkr8t5eIM02SJqI4Q__"
+                      src="../assets/images/grace-ikpang.jpeg"
                       alt=""
                       :style="{ width: '96px', height: '96px', borderRadius: '50%' }"
                     />
@@ -847,7 +847,7 @@
                           color: 'rgba(17,17,17,1)'
                         }"
                       >
-                     Grace Ikpang
+                        Grace Ikpang
                       </div>
                       <div
                         class="date-occupation"
@@ -980,7 +980,7 @@
               }"
             >
               <img
-                src="https://s3-alpha-sig.figma.com/img/a350/03c9/7071cf963d13ddf4aa425ba18e0a8881?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fsWyXHQ2FcgsTovuU92VJPBMwPjWSZpavF2uLE-4PmP~WpIzYMdnpZ7LNeKEymIwjul8z5QtLqW3Z4sRu4xpWepKeVTlT9b-yY-FcMaFM2cP6wLSdQRI6i~zaU2f~iF~YWcjzud~7CuEe3ZlxKH3F15qH9kwCcmevHASpUNstGv7xKk1DVsqvZPmNQ8E1orObefQ4ICnUfXTKmZ0AxxxsUBtT15ZT3Jx3DKjy9Kd~8Qh80cHVMxOGpedWXi~gdMSJAtJ9C6XvTiivs1ClYRdlMwlCYU4NuuQw7kFvnNDRpOnyDWqQJ-pWQTXGKdf3qQiguGNj3FZumKUC0wI3P8qCQ__"
+                src="../assets/images/post-image1.jpeg"
                 :style="{ width: '612px', height: '242px', borderRadius: '8px' }"
               />
             </div>
@@ -1296,7 +1296,7 @@
                     }"
                   >
                     <img
-                      src="https://s3-alpha-sig.figma.com/img/f603/cba7/2f8cbc49af324b24e1f943af6ab3aac4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FmeGUj~DorYbOw5jO4riZC8MxIK~Lt3TJrXvZyV8tG5nUNjcotBrr4Qdf4jHfdxWFE2ZPHzArOQ~DuuinI~FxF2dfkixh1K7cW1CeVjmt6ckDRD-rI16ExK19MCdSNMPuHwoYGngpSpuPXXln603uKMTU0ezaeKwYaN4aOjltP-s1DVXQ2LxekXDGosAMiGfpyLdluiqpidDb4YwbdOanlzIsW5LwR6JY4VWUM1fucX-RMuBZr95wWY8Vw10fMqQZdOXDmc0zwvvm-i3jHx~ZbiYzSQzJINPi3ITRnQ1MPpifCercjwBgZ8hMMhTct8wP9swpzkr8t5eIM02SJqI4Q__"
+                      src="../assets/images/tobi-ogunniyi.jpeg"
                       alt=""
                       :style="{ width: '96px', height: '96px', borderRadius: '50%' }"
                     />
@@ -1312,7 +1312,7 @@
                       <div
                         class="name"
                         :style="{
-                          width: '151px',
+                          width: '223px',
                           height: '36px',
                           textAlign: 'left',
                           fontFamily: '\'DM Sans\', sans-serif',
@@ -1323,12 +1323,12 @@
                           color: 'rgba(17,17,17,1)'
                         }"
                       >
-                        Grace Ikpang
+                        Oluwatobi Ogunniyi
                       </div>
                       <div
                         class="date-occupation"
                         :style="{
-                          width: '284px',
+                          width: '307px',
                           height: '27px',
                           gap: '8px',
                           display: 'flex',
@@ -1338,7 +1338,7 @@
                         <div
                           class="occupation"
                           :style="{
-                            width: '143px',
+                            width: '162px',
                             height: '27px',
                             textAlign: 'left',
                             fontFamily: '\'DM Sans\', sans-serif',
@@ -1349,12 +1349,12 @@
                             color: 'rgba(17,17,17,1)'
                           }"
                         >
-                          Product designer
+                          Software developer
                         </div>
                         <div
                           class="date"
                           :style="{
-                            width: '133px',
+                            width: '137px',
                             height: '27px',
                             textAlign: 'center',
                             fontFamily: '\'DM Sans\', sans-serif',
@@ -1365,7 +1365,7 @@
                             color: 'rgba(17,17,17,1)'
                           }"
                         >
-                          .May 25th, 2023
+                          .May 22nd, 2023
                         </div>
                       </div>
                     </div>
@@ -1394,7 +1394,7 @@
                         color: 'rgba(17,17,17,1)'
                       }"
                     >
-                      Starting out as a Product designer
+                      Using CSS Selectors
                     </div>
                     <div>
                       <div
@@ -1438,10 +1438,9 @@
                     color: 'rgba(98,98,98,1)'
                   }"
                 >
-                  Embarking on a journey as a product designer can be an exhilarating and fulfilling
-                  experience. As a profession that bridges the realms of art, technology, and
-                  problem-solving, product design offers an opportunity to shape the way people
-                  interact with the world around them.
+                  Cascading Style Sheets (CSS) is a fundamental technology that lies at the heart of
+                  modern web design. It empowers developers and designers to transform plain HTML
+                  into visually captivating and interactive web pages
                 </div>
               </div>
             </div>
@@ -1456,7 +1455,7 @@
               }"
             >
               <img
-                src="https://s3-alpha-sig.figma.com/img/a350/03c9/7071cf963d13ddf4aa425ba18e0a8881?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fsWyXHQ2FcgsTovuU92VJPBMwPjWSZpavF2uLE-4PmP~WpIzYMdnpZ7LNeKEymIwjul8z5QtLqW3Z4sRu4xpWepKeVTlT9b-yY-FcMaFM2cP6wLSdQRI6i~zaU2f~iF~YWcjzud~7CuEe3ZlxKH3F15qH9kwCcmevHASpUNstGv7xKk1DVsqvZPmNQ8E1orObefQ4ICnUfXTKmZ0AxxxsUBtT15ZT3Jx3DKjy9Kd~8Qh80cHVMxOGpedWXi~gdMSJAtJ9C6XvTiivs1ClYRdlMwlCYU4NuuQw7kFvnNDRpOnyDWqQJ-pWQTXGKdf3qQiguGNj3FZumKUC0wI3P8qCQ__"
+                src="../assets/images/post-image2.jpeg"
                 :style="{ width: '612px', height: '242px', borderRadius: '8px' }"
               />
             </div>
@@ -1772,13 +1771,13 @@
                     }"
                   >
                     <img
-                      src="https://s3-alpha-sig.figma.com/img/f603/cba7/2f8cbc49af324b24e1f943af6ab3aac4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FmeGUj~DorYbOw5jO4riZC8MxIK~Lt3TJrXvZyV8tG5nUNjcotBrr4Qdf4jHfdxWFE2ZPHzArOQ~DuuinI~FxF2dfkixh1K7cW1CeVjmt6ckDRD-rI16ExK19MCdSNMPuHwoYGngpSpuPXXln603uKMTU0ezaeKwYaN4aOjltP-s1DVXQ2LxekXDGosAMiGfpyLdluiqpidDb4YwbdOanlzIsW5LwR6JY4VWUM1fucX-RMuBZr95wWY8Vw10fMqQZdOXDmc0zwvvm-i3jHx~ZbiYzSQzJINPi3ITRnQ1MPpifCercjwBgZ8hMMhTct8wP9swpzkr8t5eIM02SJqI4Q__"
+                      src="../assets/images/adebola-muyideen.jpeg"
                       alt=""
                       :style="{ width: '96px', height: '96px', borderRadius: '50%' }"
                     />
                     <div
                       :style="{
-                        width: '284px',
+                        width: '269px',
                         height: '71px',
                         gap: '8px',
                         display: 'flex',
@@ -1788,7 +1787,7 @@
                       <div
                         class="name"
                         :style="{
-                          width: '151px',
+                          width: '249px',
                           height: '36px',
                           textAlign: 'left',
                           fontFamily: '\'DM Sans\', sans-serif',
@@ -1799,7 +1798,7 @@
                           color: 'rgba(17,17,17,1)'
                         }"
                       >
-                        Grace Ikpang
+                        Adebobola Muhydeen
                       </div>
                       <div
                         class="date-occupation"
@@ -1814,7 +1813,7 @@
                         <div
                           class="occupation"
                           :style="{
-                            width: '143px',
+                            width: '128px',
                             height: '27px',
                             textAlign: 'left',
                             fontFamily: '\'DM Sans\', sans-serif',
@@ -1825,7 +1824,7 @@
                             color: 'rgba(17,17,17,1)'
                           }"
                         >
-                          Product designer
+                          Political analyst
                         </div>
                         <div
                           class="date"
@@ -1841,7 +1840,7 @@
                             letterSpacing: '0em'
                           }"
                         >
-                          .May 25th, 2023
+                          .May 23rd, 2023
                         </div>
                       </div>
                     </div>
@@ -1859,7 +1858,7 @@
                     <div
                       class="post-title"
                       :style="{
-                        width: '526px',
+                        width: '738px',
                         height: '48px',
                         textAlign: 'left',
                         fontFamily: '\'DM Sans\', sans-serif',
@@ -1870,7 +1869,7 @@
                         color: 'rgba(17,17,17,1)'
                       }"
                     >
-                      Starting out as a Product designer
+                      The Impact of social media on Political discourse
                     </div>
                     <div>
                       <div
@@ -1914,10 +1913,9 @@
                     color: 'rgba(98,98,98,1)'
                   }"
                 >
-                  Embarking on a journey as a product designer can be an exhilarating and fulfilling
-                  experience. As a profession that bridges the realms of art, technology, and
-                  problem-solving, product design offers an opportunity to shape the way people
-                  interact with the world around them.
+                  In the era of digital communication, social media platforms have become pervasive
+                  in our daily lives, revolutionizing the way we connect, share information, and
+                  engage with the world
                 </div>
               </div>
             </div>
@@ -1932,7 +1930,7 @@
               }"
             >
               <img
-                src="https://s3-alpha-sig.figma.com/img/a350/03c9/7071cf963d13ddf4aa425ba18e0a8881?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fsWyXHQ2FcgsTovuU92VJPBMwPjWSZpavF2uLE-4PmP~WpIzYMdnpZ7LNeKEymIwjul8z5QtLqW3Z4sRu4xpWepKeVTlT9b-yY-FcMaFM2cP6wLSdQRI6i~zaU2f~iF~YWcjzud~7CuEe3ZlxKH3F15qH9kwCcmevHASpUNstGv7xKk1DVsqvZPmNQ8E1orObefQ4ICnUfXTKmZ0AxxxsUBtT15ZT3Jx3DKjy9Kd~8Qh80cHVMxOGpedWXi~gdMSJAtJ9C6XvTiivs1ClYRdlMwlCYU4NuuQw7kFvnNDRpOnyDWqQJ-pWQTXGKdf3qQiguGNj3FZumKUC0wI3P8qCQ__"
+                src="../assets/images/post-image3.jpeg"
                 :style="{ width: '612px', height: '242px', borderRadius: '8px' }"
               />
             </div>
@@ -2204,14 +2202,10 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { signOut, getAuth } from 'firebase/auth'
-import { ref } from 'vue';
+import { ref } from 'vue'
 // import { useUserStore } from '@/stores/user';
 
-
-const router = useRouter();
-
-
-
+const router = useRouter()
 
 const handlePostContent = () => {
   router.push('/post-screen1')

@@ -74,7 +74,7 @@
         </p>
       </div>
       <img
-        src="https://s3-alpha-sig.figma.com/img/b841/9d87/2cdd8a0b91fc4ac38a15c5566ddc5de5?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lpa-VNWY1drYH6tQDWs2w5s5gpXmx~FpeheTBYGq5asDwadiPPHKsyAoZxMPSgCaOBDjSK~4~15T0diWyGG0U8hlTzXTP0vAiAWC0UyP2kyf~C85g0gzIq0k14DEjXw4pkHqJ9HX13p6j7XljufrS12CxmHVqI0ZyCXQ83gp-2BbZarw56tN-sWV~uAQp5ZzB7ILIoims~690AGUBjjEBLNzxXJ3mqnUCUgkgaBhgTn1dM~jKDuZRkq~L8KxFpVpbVCn3nHKig1NjUkS0N5enkFSp1d1cWntAkfEbL3HPbL3nwOfepSouc7b5KiqdWv~qeRARzbmhoAAvTrltj7Png__"
+        src="../assets/images/about-image.jpg.png"
         alt="image"
         :style="{ width: '500px', height: '404px', borderRadius: '8px' }"
       />
@@ -320,7 +320,7 @@
   <div class="user">
     <div>
       <img
-        src="https://s3-alpha-sig.figma.com/img/11f4/3480/c9f01e87bae608ae40583248f46f62ad?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i39MsVufdyjH1lVHB6f0vrx4upKmzvSrfNg-f2IFX0tbAT1g46wRZwCmSdidlK1c~Y5~bTc1TovTbJjEn3lVEaAXKyQ9cWA04A70xgzowtA2sVSg7W5~DIvELw8pwk6RK9agH0ezJQbBn6iIKnG4LwI0LzIIQbtpVaW7f-CzMwJGwv3QK~2rCYlnpf4~Vm8ckkAUoJJsl8~WBiIcqGNbBBgzD45-hry3gn2bqmxwOpVPdTj8Nz4H5m0Z5rc37A21CVYXbQ-~z54iebCxecBzrNCWLiKNcqfDt4q0xtI-Y6c~nO62VZUerkK64qasPnx8jOEVCKhv6cpIzFwhpsL8PA__"
+        src="../assets/images/user-image.jpeg"
         alt=""
         :style="{
           width: '300px',
@@ -405,7 +405,7 @@
     <div class="child1">
       <div class="child11">
         <img
-          src="https://s3-alpha-sig.figma.com/img/0281/24af/0abc98419a146364bf2e168a4f6973f5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iSFAx00v9hmbuR9Zqie8huuSi-v2UNxb4NdmNmW6kQSmQT0fss2z6HHosKdPOmpsXpi1VapfYMwmu4rBigNtq9iy1A8vZmU1nD3ITS8CvU143uYJEngCXvjF53STm0sMLkV8NeXdCyBkwD-NAUXB1GxYO9jP2X7ufCiOUbuUtZqjT7OkEx9qUBreHxkoGpG9zVciU-PYliLoR03uwr4KqdhMWIgBigv8S1eQH57jTXZhXV2vLALcdBFb9JlDi5F2GviJWSumtg3cVNhriuvdSnIU-A8b6kax2jga6Mg0zv~Kb~t9Irj9f~ROBYX6FgpOujzuvOM24PUVhmLh82RRCg__"
+          src="../assets/images/grace-ikpang.jpeg"
           alt=""
           :style="{
             width: '154px',
@@ -415,7 +415,7 @@
           }"
         />
         <img
-          src="https://s3-alpha-sig.figma.com/img/f603/cba7/2f8cbc49af324b24e1f943af6ab3aac4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FmeGUj~DorYbOw5jO4riZC8MxIK~Lt3TJrXvZyV8tG5nUNjcotBrr4Qdf4jHfdxWFE2ZPHzArOQ~DuuinI~FxF2dfkixh1K7cW1CeVjmt6ckDRD-rI16ExK19MCdSNMPuHwoYGngpSpuPXXln603uKMTU0ezaeKwYaN4aOjltP-s1DVXQ2LxekXDGosAMiGfpyLdluiqpidDb4YwbdOanlzIsW5LwR6JY4VWUM1fucX-RMuBZr95wWY8Vw10fMqQZdOXDmc0zwvvm-i3jHx~ZbiYzSQzJINPi3ITRnQ1MPpifCercjwBgZ8hMMhTct8wP9swpzkr8t5eIM02SJqI4Q__"
+          src="../assets/images/tobi-ogunniyi.jpeg"
           alt=""
           :style="{
             width: '154px',
@@ -429,7 +429,7 @@
       </div>
       <div>
         <img
-          src="https://s3-alpha-sig.figma.com/img/80a2/f0d9/4cd112f12b18cc351a0d65cc6d9d59bf?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OIYql2e8wYdwDCdygciPIx3OmKXR95yvCIBtGHb0bdQxILe5k14ATkGeh~9OnTGWNsfZ8LeeHK3Gijv6Ks5YHhKVVbVoomrPgTv1dg6CDO~z9elwx20lTBsYDutT6twhRLmhfSGPcc6oFM68y3S5uLEGu1sqSWCWFc4ObC5S5tRgAXQBnEI9USIcTrRzVTygnKIfKgiXXjyqWnoyCP~bOr83UBAKU1ChRAH2HmHPjhyy~NnaIaglvQjG5eAmUp1bcb2hLkLp9vxfVjJWhO5YIBH5JzmY78KrHUNl1tWeaCEQg9gTjSo1nYHi9u~nSwgvkWiuWW~01HMoULGlckLtXA__"
+          src="../assets/images/adebola-muyideen.jpeg"
           alt=""
           :style="{
             width: '154px',
@@ -759,7 +759,7 @@ export default {
   position: absolute;
 }
 .welcome-image {
-  background-image: url('https://s3-alpha-sig.figma.com/img/b497/9175/01af3e27298b70fee1f8a10be764856b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EQHL6ajJmVP7wcIsNT12nz0ZR13xafOZN2tH8Ai2DjMntwRg0gcdz543MiCCtS2W48n1uesx91ukOfYT6kJByG2126L52H9E5CbVvoXyEhT4dZNsSAqW82PW09AVvb3IaKd8UeuZ9WucqCbNctymQ3RdlV-Fi-I2xf7RHrq7psxOHqDxhEMG6MYMW0l7PKT2i7~VYhJHG~3KQ~V5HYK32OC8bTt1expJFMA-yxZfvCYf8WiLFMAozy0DfFeHrIKVJKLP5f6bWq0VqZuHUHnnGMs02IBYue2brk8FQMsxua8vo6E5lXkmf~sV5Ed9m0tfDUfWFm2BTw77IhAnt6H0Pg__');
+  background-image: url('../assets/images/landing-page.jpg');
   width: 1440px;
   height: 765px;
   padding: 216px, 228px, 216px, 228px;
