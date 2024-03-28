@@ -422,7 +422,7 @@
         :style ="{color: 'red', fontWeight: '500px', width: '520px',
             }"
         >{{
-            v$.fconfirmPassword.$errors[0].$message
+            v$.confirmPassword.$errors[0].$message
           }}</div>
         </div>
 
