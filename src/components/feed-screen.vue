@@ -71,7 +71,7 @@
               flexDirection: 'column'
             }"
           >
-            <div></div>
+            
             <div
               :style="{
                 width: '37px',

@@ -612,7 +612,7 @@ const handleSignup = async () => {
   background-color: rgba(255, 255, 255, 1);
 }
 .signup-image {
-  background-image: url('https://s3-alpha-sig.figma.com/img/6ced/09bb/73e06e07b6387b1ead37c89ea74cefb0?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pN0DeTfodtorugsdcSX0QcE~oWhIA9xE26Av7VftiWmDKpzZdUgBUxdSCyyQRVbfBX1~gk7W1rQA5L9W0jGgDPoeY5lHUGaKWZ18u7JpgPVxTpzim77NokHpjubq6IxdyqKb-R39IJvlre1~w-n4o6oUTSVjd8fwkfGr-GbDXTaOlpkgrPoDF0Cnwc0Pwgj7cCQRrLXJJuN7o6jgKGXy6VuF74Z88Is5V~4wIPB0JGkmmODFYJ9Y~t6yxK-Plq5qcP4QaEVgN~~~yKuLf4maRkVKRzPsdXOvTsmWr-EqKXFWQ6oLrR30OC3n0hss288HqxmPYtnIBwlLdnt~UFFJGA__');
+  background-image: url('../assets/images/signup-image.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

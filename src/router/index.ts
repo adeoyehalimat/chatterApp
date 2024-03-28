@@ -10,6 +10,7 @@ import ConfirmMessage from '../components/confirm-message.vue'
 import Postscreen1 from '../components/post-screen1.vue'
 import Postscreen2 from '../components/post-screen2.vue'
 import NotFound from '../components/NotFound.vue'
+import DashBoard2 from '@/layout/dash-board2.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,7 +42,12 @@ const router = createRouter({
 
     { path: '/post-screen1', component: Postscreen1 },
     { path: '/post-screen2', component: Postscreen2 },
-    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound }
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound },
+    {path: '/dashboard2', component: DashBoard2, children: [
+
+      
+
+    ]}
   ]
 })
 
