@@ -39,7 +39,7 @@
         </p>
       </div>
       <img
-        src="https://s3-alpha-sig.figma.com/img/b841/9d87/2cdd8a0b91fc4ac38a15c5566ddc5de5?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lpa-VNWY1drYH6tQDWs2w5s5gpXmx~FpeheTBYGq5asDwadiPPHKsyAoZxMPSgCaOBDjSK~4~15T0diWyGG0U8hlTzXTP0vAiAWC0UyP2kyf~C85g0gzIq0k14DEjXw4pkHqJ9HX13p6j7XljufrS12CxmHVqI0ZyCXQ83gp-2BbZarw56tN-sWV~uAQp5ZzB7ILIoims~690AGUBjjEBLNzxXJ3mqnUCUgkgaBhgTn1dM~jKDuZRkq~L8KxFpVpbVCn3nHKig1NjUkS0N5enkFSp1d1cWntAkfEbL3HPbL3nwOfepSouc7b5KiqdWv~qeRARzbmhoAAvTrltj7Png__"
+        src="../assets/images/about-image.jpg.png"
         alt="image"
         :style="{ width: '500px', height: '404px', borderRadius: '8px' }"
       />
